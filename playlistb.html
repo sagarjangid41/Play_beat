@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="styles/sidekick.css" rel="stylesheet">
+
+
+
+
+
+    <style>
+        body{
+            background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1059-041c-kv7v7wnb.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9281c9dc720656a8e68d0f75f2a22e40');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: rgba(140, 139, 138, 0.7);
+     background-blend-mode: soft-light;
+        }
+.list{
+    border: 1px solid rgb(183, 181, 181);
+    list-style-type:none;
+    text-align: center;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family: bold;
+}
+audio{
+height: 60px;
+    width: 85%;
+    
+}
+.footer {
+  position: fixed;
+margin-left: 206px;
+  bottom: 0;
+  width: 100%;
+  background-color:aliceblue;
+  border : rgb(69, 68, 68) 6px solid
+
+}
+
+    </style>
+          <script>
+            var api_url= window.location.href
+            var url = new URL(api_url);
+            var sname = url.searchParams.get("sname");
+            var simg = url.searchParams.get("simg");
+            var song = url.searchParams.get("song");
+            console.log(simg)
+            document.getElementById("simg").src=simg
+            document.getElementById("sname").textContent=sname
+            document.getElementById("song").src=song
+        </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #9fa4a6;">
+        <a class="navbar-brand" href="desktop.html" style="font-family:bold; font-size: 30px; ">Lets! Play Beat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 25%;">
+          <ul class="navbar-nav">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" size="40px" placeholder="Search Song" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" style="background-color:#575859;" type="submit">Search</button>
+              </form>
+          </ul>
+        </div>
+      </nav>
+      <div  style="background-color: #9fa4a6 ;border: rgb(69, 68, 68) 6px solid; float:left;" >
+        <img src="https://a10.gaanacdn.com/images/albums/70/2639970/crop_480x480_2639970.jpg" alt="coming" width="200px" style="border-radius: 100%; margin-bottom: 20px;">
+ 
+        <li class="list"><a style="color: black;" href="http://127.0.0.1:5555/playlistb.html?sname=Tujhe Bhula Diya&song=bh2.mp3&simg=bh2.jpg">Tujhe Bhula Diya</a> </li>
+        <li class="list"><a style="color: black;" href="http://127.0.0.1:5555/playlistb.html?sname=Broken Heart&song=bh1.mp3&simg=bh1.jpg">Broken Heart</a></li>
+        <li class="list"><a style="color: black;" href="http://127.0.0.1:5555/playlistb.html?sname=Channa Mereya&song=bh3.mp3&simg=bh3.jpg">Channa Mereya</a></li>
+        <li style="margin-top: 337px; list-style-type:none;"></li> <li style="margin-top: 337px; list-style-type:none;"></li>
+
+    </div>
+    <div id="head" style="text-align: center; ">
+        <p style="font-size: 70px;  font-family: bold; background-color: rgba(0,0,0,0.7); color: #9fa4a6;">
+        Heart Broken  
+        </p>
+      </div>
+
+
+      <div class="card" style="width: 23rem;  margin: auto; background-color: #9fa4a6;   border : rgb(69, 68, 68) 6px solid
+      ">
+        <img id="simg" class="card-img-top" src="parwa.jpg">
+        <div class="card-body">
+          <h5 id="sname" style="font-size: 25px;  font-family: bold;" class="card-title">Ab jo bhi ho Parwah Nahi </h5>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="footer">
+        <audio id="player" controls autoplay loop controlsList="nodownload noplaybackrate">
+            <source id="song" src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+          
+
+      </div>
+
+    </style>
+    <script>
+      var api_url= window.location.href
+      var url = new URL(api_url);
+      var sname = url.searchParams.get("sname");
+      var simg = url.searchParams.get("simg");
+      var song = url.searchParams.get("song");
+      console.log(simg)
+      document.getElementById("simg").src=simg
+      document.getElementById("sname").textContent=sname
+      document.getElementById("song").src=song
+  </script>
+
+</body>
+</html>
